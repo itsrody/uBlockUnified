@@ -70,56 +70,56 @@
         "type": "AdBlock Plus",
         "url": "https://filters.adtidy.org/extension/ublock/filters/118_optimized.txt",
         "enabled": true,
-        "priority": 9
+        "priority": 8
       },
       {
         "name": "Fanboy's Annoyances",
         "type": "AdBlock Plus",
         "url": "https://filters.adtidy.org/extension/ublock/filters/122_optimized.txt",
         "enabled": true,
-        "priority": 10
+        "priority": 9
       },
       {
         "name": "AdGuard Base Filter",
         "type": "AdGuard",
         "url": "https://filters.adtidy.org/extension/ublock/filters/2_optimized.txt",
         "enabled": true,
-        "priority": 11
+        "priority": 10
       },
       {
         "name": "AdGuard Tracking Protection",
         "type": "AdGuard",
         "url": "https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt",
         "enabled": true,
-        "priority": 12
+        "priority": 11
       },
       {
         "name": "AdGuard Social",
         "type": "AdGuard",
         "url": "https://filters.adtidy.org/extension/ublock/filters/4_optimized.txt",
         "enabled": true,
-        "priority": 13
+        "priority": 12
       },
       {
         "name": "AdGuard Useful Filter",
         "type": "AdGuard",
         "url": "https://filters.adtidy.org/extension/ublock/filters/10_optimized.txt",
         "enabled": true,
-        "priority": 14
+        "priority": 13
       },
       {
         "name": "AdGuard Mobile Filter",
         "type": "AdGuard",
         "url": "https://filters.adtidy.org/extension/ublock/filters/11_optimized.txt",
         "enabled": true,
-        "priority": 15
+        "priority": 14
       },
       {
         "name": "AdGuard Annoyances",
         "type": "AdGuard",
         "url": "https://filters.adtidy.org/extension/ublock/filters/14_optimized.txt",
         "enabled": true,
-        "priority": 17
+        "priority": 15
       },
       {
         "name": "AdGuard URL Tracking",
@@ -133,28 +133,28 @@
         "type": "Adblock Plus",
         "url": "https://filters.adtidy.org/extension/ublock/filters/250_optimized.txt",
         "enabled": true,
-        "priority": 23
+        "priority": 17
       },
       {
         "name": "Scam Blocklist by DurableNapkin",
         "type": "Adblock Plus",
         "url": "https://filters.adtidy.org/extension/ublock/filters/256_optimized.txt",
         "enabled": true,
-        "priority": 23
+        "priority": 18
       },
       {
         "name": "Peter Lowe's Ad Server List",
         "type": "Hosts File",
         "url": "https://pgl.yoyo.org/adservers/serverlist.php?hostformat=adblock&showintro=0&mimetype=plaintext",
         "enabled": true,
-        "priority": 22
+        "priority": 19
       },
       {
         "name": "URLhaus Malicious URL Blocklist",
         "type": "Adblock Plus",
         "url": "https://filters.adtidy.org/extension/ublock/filters/208_optimized.txt",
         "enabled": true,
-        "priority": 23
+        "priority": 20
       },
       {
       {
@@ -162,21 +162,21 @@
         "type": "AdBlock Plus",
         "url": "https://abp.oisd.nl/basic/",
         "enabled": true,
-        "priority": 26
+        "priority": 21
       },
       {
         "name": "StevenBlack Hosts",
         "type": "Hosts File",
         "url": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-social/hosts",
         "enabled": true,
-        "priority": 27
+        "priority": 22
       },
       {
         "name": "Hagezi Ultimate Full",
         "type": "Hosts File",
         "url": "https://github.com/hagezi/dns-blocklists/raw/refs/heads/main/hosts/ultimate.txt",
         "enabled": true,
-        "priority": 28
+        "priority": 23
       }
     ],
     "sections": [
