@@ -164,16 +164,16 @@
         "priority": 21
       },
       {
-        "name": "StevenBlack Hosts",
-        "type": "Hosts File",
-        "url": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-social/hosts",
+        "name": "HaGeZi's Pro mini DNS/Browser Blocklist",
+        "type": "AdBlock Plus",
+        "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/pro.mini.txt",
         "enabled": true,
         "priority": 22
       },
       {
-        "name": "Hagezi Ultimate Full",
+        "name": "StevenBlack Hosts",
         "type": "Hosts File",
-        "url": "https://github.com/hagezi/dns-blocklists/raw/refs/heads/main/hosts/ultimate.txt",
+        "url": "https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts",
         "enabled": true,
         "priority": 23
       }
