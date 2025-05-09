@@ -12,7 +12,7 @@
       "retry_delay": 5,
       "timeout": 30,
       "user_agent": "uBlock-Unified-List-Generator/1.0",
-      "parallel_downloads": 5,
+      "parallel_downloads": 30,
       "output_file": "ublock-unified-list.txt"
     },
     "sources": [
@@ -204,6 +204,13 @@
         "url": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-social/hosts",
         "enabled": true,
         "priority": 27
+      },
+      {
+        "name": "Hagezi Ultimate Full",
+        "type": "Pi-hole",
+        "url": "https://github.com/hagezi/dns-blocklists/raw/refs/heads/main/hosts/ultimate.txt",
+        "enabled": true,
+        "priority": 28
       }
     ],
     "sections": [
