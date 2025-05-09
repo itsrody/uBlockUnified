@@ -17,81 +17,193 @@
     },
     "sources": [
       {
+        "name": "uBlock Filters",
+        "type": "uBlock Origin",
+        "url": "https://ublockorigin.pages.dev/filters/filters.min.txt",
+        "enabled": true,
+        "priority": 1
+      },
+      {
+        "name": "uBlock Badware risks",
+        "type": "uBlock Origin",
+        "url": "https://ublockorigin.pages.dev/filters/badware.min.txt",
+        "enabled": true,
+        "priority": 2
+      },
+      {
+        "name": "uBlock Privacy",
+        "type": "uBlock Origin",
+        "url": "https://ublockorigin.github.io/uAssetsCDN/filters/privacy.min.txt",
+        "enabled": true,
+        "priority": 3
+      },
+      {
+        "name": "uBlock Quick Fixes",
+        "type": "uBlock Origin",
+        "url": "https://cdn.statically.io/gh/uBlockOrigin/uAssetsCDN/main/filters/quick-fixes.min.txt",
+        "enabled": true,
+        "priority": 4
+      },
+      {
+        "name": "uBlock Unbreak",
+        "type": "uBlock Origin",
+        "url": "https://ublockorigin.github.io/uAssetsCDN/filters/unbreak.min.txt",
+        "enabled": true,
+        "priority": 5
+      },
+      {
+        "name": "uBlock Cookies Notice",
+        "type": "uBlock Origin",
+        "url": "https://cdn.statically.io/gh/uBlockOrigin/uAssetsCDN/main/filters/annoyances-cookies.txt",
+        "enabled": true,
+        "priority": 6
+      },
+      {
+        "name": "uBlock Annoyances",
+        "type": "uBlock Origin",
+        "url": "https://cdn.jsdelivr.net/gh/uBlockOrigin/uAssetsCDN@main/filters/annoyances.min.txt",
+        "enabled": true,
+        "priority": 7
+      },
+      {
         "name": "EasyList",
         "type": "AdBlock Plus",
         "url": "https://easylist.to/easylist/easylist.txt",
         "enabled": true,
-        "priority": 1
+        "priority": 8
       },
       {
         "name": "EasyPrivacy",
         "type": "AdBlock Plus",
         "url": "https://easylist.to/easylist/easyprivacy.txt",
         "enabled": true,
-        "priority": 2
+        "priority": 9
+      },
+      {
+        "name": "Fanboy's Annoyances",
+        "type": "AdBlock Plus",
+        "url": "https://secure.fanboy.co.nz/fanboy-annoyance.txt",
+        "enabled": true,
+        "priority": 10
       },
       {
         "name": "AdGuard Base Filter",
         "type": "AdGuard",
         "url": "https://filters.adtidy.org/extension/ublock/filters/2.txt",
         "enabled": true,
-        "priority": 3
+        "priority": 11
       },
       {
         "name": "AdGuard Tracking Protection",
         "type": "AdGuard",
         "url": "https://filters.adtidy.org/extension/ublock/filters/3.txt",
         "enabled": true,
-        "priority": 4
+        "priority": 12
+      },
+      {
+        "name": "AdGuard Social",
+        "type": "AdGuard",
+        "url": "https://filters.adtidy.org/extension/ublock/filters/4.txt",
+        "enabled": true,
+        "priority": 13
+      },
+      {
+        "name": "AdGuard Useful Filter",
+        "type": "AdGuard",
+        "url": "https://filters.adtidy.org/extension/ublock/filters/10.txt",
+        "enabled": true,
+        "priority": 14
+      },
+      {
+        "name": "AdGuard Mobile Filter",
+        "type": "AdGuard",
+        "url": "https://filters.adtidy.org/extension/ublock/filters/11.txt",
+        "enabled": true,
+        "priority": 15
+      },
+      {
+        "name": "AdGuard URL Tracking",
+        "type": "AdGuard",
+        "url": "https://filters.adtidy.org/extension/ublock/filters/17.txt",
+        "enabled": true,
+        "priority": 16
+      },
+      {
+        "name": "AdGuard Cookies",
+        "type": "AdGuard",
+        "url": "https://filters.adtidy.org/extension/ublock/filters/18.txt",
+        "enabled": true,
+        "priority": 17
+      },
+      {
+        "name": "AdGuard Popups",
+        "type": "AdGuard",
+        "url": "https://filters.adtidy.org/extension/ublock/filters/19.txt",
+        "enabled": true,
+        "priority": 18
+      },
+      {
+        "name": "AdGuard Mobile Banners",
+        "type": "AdGuard",
+        "url": "https://filters.adtidy.org/extension/ublock/filters/20.txt",
+        "enabled": true,
+        "priority": 19
+      },
+      {
+        "name": "AdGuard Other Annoyances",
+        "type": "AdGuard",
+        "url": "https://filters.adtidy.org/extension/ublock/filters/21.txt",
+        "enabled": true,
+        "priority": 20
+      },
+      {
+        "name": "AdGuard Widgets",
+        "type": "AdGuard",
+        "url": "https://filters.adtidy.org/extension/ublock/filters/22.txt",
+        "enabled": true,
+        "priority": 21
       },
       {
         "name": "Peter Lowe's Ad Server List",
         "type": "Hosts File",
         "url": "https://pgl.yoyo.org/adservers/serverlist.php?hostformat=adblock&showintro=0&mimetype=plaintext",
         "enabled": true,
-        "priority": 5
+        "priority": 22
       },
       {
         "name": "URLhaus Malicious URL Blocklist",
         "type": "AdBlock Plus",
         "url": "https://malware-filter.gitlab.io/malware-filter/urlhaus-filter-agh.txt",
         "enabled": true,
-        "priority": 6
+        "priority": 23
       },
       {
         "name": "ClearURLs for uBlock Origin",
         "type": "ClearURLs",
         "url": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/ClearURLs%20for%20uBo/clear_urls_uboified.txt",
         "enabled": true,
-        "priority": 7
+        "priority": 24
       },
       {
         "name": "Ghostery Tracker Blocking List",
         "type": "Ghostery",
         "url": "https://raw.githubusercontent.com/ghostery/ghostery-extension/main/extension-manifest-v2/app/content/blocklists/adblock.txt",
         "enabled": true,
-        "priority": 8
+        "priority": 25
       },
       {
         "name": "OISD Basic",
         "type": "AdBlock Plus",
         "url": "https://abp.oisd.nl/basic/",
         "enabled": true,
-        "priority": 9
+        "priority": 26
       },
       {
-        "name": "NoCoin Filter List",
-        "type": "AdBlock Plus",
-        "url": "https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/nocoin.txt",
-        "enabled": true,
-        "priority": 10
-      },
-      {
-        "name": "Pi-hole Blocklist",
+        "name": "StevenBlack Hosts",
         "type": "Pi-hole",
-        "url": "https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts",
+        "url": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-social/hosts",
         "enabled": true,
-        "priority": 11
+        "priority": 27
       }
     ],
     "sections": [
