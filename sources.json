@@ -12,7 +12,7 @@
       "retry_delay": 5,
       "timeout": 30,
       "user_agent": "uBlock-Unified-List-Generator/1.0",
-      "parallel_downloads": 30,
+      "parallel_downloads": 15,
       "output_file": "ublock-unified-list.txt"
     },
     "sources": [
@@ -66,102 +66,81 @@
         "priority": 7
       },
       {
-        "name": "EasyList",
-        "type": "AdBlock Plus",
-        "url": "https://easylist.to/easylist/easylist.txt",
-        "enabled": true,
-        "priority": 8
-      },
-      {
         "name": "EasyPrivacy",
         "type": "AdBlock Plus",
-        "url": "https://easylist.to/easylist/easyprivacy.txt",
+        "url": "https://filters.adtidy.org/extension/ublock/filters/118_optimized.txt",
         "enabled": true,
         "priority": 9
       },
       {
         "name": "Fanboy's Annoyances",
         "type": "AdBlock Plus",
-        "url": "https://secure.fanboy.co.nz/fanboy-annoyance.txt",
+        "url": "https://filters.adtidy.org/extension/ublock/filters/122_optimized.txt",
         "enabled": true,
         "priority": 10
       },
       {
         "name": "AdGuard Base Filter",
         "type": "AdGuard",
-        "url": "https://filters.adtidy.org/extension/ublock/filters/2.txt",
+        "url": "https://filters.adtidy.org/extension/ublock/filters/2_optimized.txt",
         "enabled": true,
         "priority": 11
       },
       {
         "name": "AdGuard Tracking Protection",
         "type": "AdGuard",
-        "url": "https://filters.adtidy.org/extension/ublock/filters/3.txt",
+        "url": "https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt",
         "enabled": true,
         "priority": 12
       },
       {
         "name": "AdGuard Social",
         "type": "AdGuard",
-        "url": "https://filters.adtidy.org/extension/ublock/filters/4.txt",
+        "url": "https://filters.adtidy.org/extension/ublock/filters/4_optimized.txt",
         "enabled": true,
         "priority": 13
       },
       {
         "name": "AdGuard Useful Filter",
         "type": "AdGuard",
-        "url": "https://filters.adtidy.org/extension/ublock/filters/10.txt",
+        "url": "https://filters.adtidy.org/extension/ublock/filters/10_optimized.txt",
         "enabled": true,
         "priority": 14
       },
       {
         "name": "AdGuard Mobile Filter",
         "type": "AdGuard",
-        "url": "https://filters.adtidy.org/extension/ublock/filters/11.txt",
+        "url": "https://filters.adtidy.org/extension/ublock/filters/11_optimized.txt",
         "enabled": true,
         "priority": 15
       },
       {
-        "name": "AdGuard URL Tracking",
+        "name": "AdGuard Annoyances",
         "type": "AdGuard",
-        "url": "https://filters.adtidy.org/extension/ublock/filters/17.txt",
-        "enabled": true,
-        "priority": 16
-      },
-      {
-        "name": "AdGuard Cookies",
-        "type": "AdGuard",
-        "url": "https://filters.adtidy.org/extension/ublock/filters/18.txt",
+        "url": "https://filters.adtidy.org/extension/ublock/filters/14_optimized.txt",
         "enabled": true,
         "priority": 17
       },
       {
-        "name": "AdGuard Popups",
+        "name": "AdGuard URL Tracking",
         "type": "AdGuard",
-        "url": "https://filters.adtidy.org/extension/ublock/filters/19.txt",
+        "url": "https://filters.adtidy.org/extension/ublock/filters/17_optimized.txt",
         "enabled": true,
-        "priority": 18
+        "priority": 16
       },
       {
-        "name": "AdGuard Mobile Banners",
-        "type": "AdGuard",
-        "url": "https://filters.adtidy.org/extension/ublock/filters/20.txt",
+        "name": "Dandelion Sprout's Annoyances",
+        "type": "Adblock Plus",
+        "url": "https://filters.adtidy.org/extension/ublock/filters/250_optimized.txt",
         "enabled": true,
-        "priority": 19
+        "priority": 23
       },
       {
-        "name": "AdGuard Other Annoyances",
-        "type": "AdGuard",
-        "url": "https://filters.adtidy.org/extension/ublock/filters/21.txt",
+        "name": "Scam Blocklist by DurableNapkin",
+        "type": "Adblock Plus",
+        "url": "https://filters.adtidy.org/extension/ublock/filters/256_optimized.txt",
         "enabled": true,
-        "priority": 20
-      },
-      {
-        "name": "AdGuard Widgets",
-        "type": "AdGuard",
-        "url": "https://filters.adtidy.org/extension/ublock/filters/22.txt",
-        "enabled": true,
-        "priority": 21
+        "priority": 23
       },
       {
         "name": "Peter Lowe's Ad Server List",
@@ -172,25 +151,12 @@
       },
       {
         "name": "URLhaus Malicious URL Blocklist",
-        "type": "AdBlock Plus",
-        "url": "https://malware-filter.gitlab.io/malware-filter/urlhaus-filter-agh.txt",
+        "type": "Adblock Plus",
+        "url": "https://filters.adtidy.org/extension/ublock/filters/208_optimized.txt",
         "enabled": true,
         "priority": 23
       },
       {
-        "name": "ClearURLs for uBlock Origin",
-        "type": "ClearURLs",
-        "url": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/ClearURLs%20for%20uBo/clear_urls_uboified.txt",
-        "enabled": true,
-        "priority": 24
-      },
-      {
-        "name": "Ghostery Tracker Blocking List",
-        "type": "Ghostery",
-        "url": "https://raw.githubusercontent.com/ghostery/ghostery-extension/main/extension-manifest-v2/app/content/blocklists/adblock.txt",
-        "enabled": true,
-        "priority": 25
-      },
       {
         "name": "OISD Basic",
         "type": "AdBlock Plus",
@@ -200,14 +166,14 @@
       },
       {
         "name": "StevenBlack Hosts",
-        "type": "Pi-hole",
+        "type": "Hosts File",
         "url": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-social/hosts",
         "enabled": true,
         "priority": 27
       },
       {
         "name": "Hagezi Ultimate Full",
-        "type": "Pi-hole",
+        "type": "Hosts File",
         "url": "https://github.com/hagezi/dns-blocklists/raw/refs/heads/main/hosts/ultimate.txt",
         "enabled": true,
         "priority": 28
