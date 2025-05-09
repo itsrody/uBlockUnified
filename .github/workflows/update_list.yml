@@ -3,34 +3,53 @@ name: Update Unified List
 permissions:
 
   contents: write
-
 on:
   schedule:
-    - cron: '0 12 * * *'  # Daily at 12:00 UTC
-  workflow_dispatch:
+    - cron: '0 */12 * * *'  # Run every 12 hours
+  workflow_dispatch:  # Allow manual trigger
+  push:
+    paths:
+      - 'sources.json'
+      - 'src/**'
+      - '.github/workflows/update-list.yml'
 
 jobs:
-  generate:
+  update-list:
     runs-on: ubuntu-latest
+    
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v3
-
-    - name: Set up Python
-      uses: actions/setup-python@v4
-      with:
-        python-version: '3.10'
-
-    - name: Install dependencies
-      run: pip install -r requirements.txt
-
-    - name: Generate list
-      run: python -m src.main --stats --clean-cache
-
-    - name: Commit and push changes
-      run: |
-        git config --global user.name "GitHub Actions"
-        git config --global user.email "actions@github.com"
-        git add output/ublock-unified-list.txt
-        git commit -m "Auto-update unified list" || echo "No changes to commit"
-        git push
+      - uses: actions/checkout@v3
+      
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+          
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests
+          
+      - name: Generate unified list
+        run: python src/main.py
+        
+      - name: Check for changes
+        id: changes
+        run: |
+          if [[ -n $(git status --porcelain) ]]; then
+            echo "changes=true" >> $GITHUB_OUTPUT
+          else
+            echo "changes=false" >> $GITHUB_OUTPUT
+          fi
+          
+      - name: Commit and push changes
+        if: steps.changes.outputs.changes == 'true'
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add ublock-unified-list.txt
+          git commit -m "Update unified list [skip ci]
+          
+          Last updated: $(date -u +'%Y-%m-%d:%H:%M') UTC
+          Total rules: $(grep -c "^[^!]" ublock-unified-list.txt)"
+          git push
